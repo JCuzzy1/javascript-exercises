@@ -26,12 +26,12 @@ Fifth test: Repeat 'goodbye' -1 times - expected to return an error. */
 
 
 const repeatString = function(string,num) { 
-    let repeatedString = "";
+    let repeatedString = ""; // create a variable (an empty string) to hold the string I'm going to return.
     if(num < 0) {
         return 'ERROR';
     }
-    for(let i = 0; i < num; i++) {
-        repeatedString += string; // repeatedString = repeatedString + string
+    for(let i = 0; i < num; i++) { // create a loop that repeats the given number of times: initialise: index starting at zero; condition: as long as i is less than the number or iterations; final-expression: increment the value by 1.
+        repeatedString = repeatedString + string //add the given string to the result on each loop.
     }
 
     return repeatedString;
